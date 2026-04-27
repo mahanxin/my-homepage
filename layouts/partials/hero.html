@@ -1,7 +1,7 @@
 <section id="hero">
   <div class="hero-inner">
     {{- with .Site.Data.profile.avatar -}}
-    <img class="hero-avatar" src="{{ . | relURL }}" alt="{{ $.Site.Data.profile.name }}">
+    <img class="hero-avatar" src="{{ . | absURL }}" alt="{{ $.Site.Data.profile.name }}">
     {{- else -}}
     <div class="hero-avatar-placeholder">{{ substr $.Site.Data.profile.name 0 1 }}</div>
     {{- end }}
