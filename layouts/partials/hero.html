@@ -1,0 +1,27 @@
+<section id="hero">
+  <div class="hero-inner">
+    {{- with .Site.Data.profile.avatar -}}
+    <img class="hero-avatar" src="{{ . }}" alt="{{ $.Site.Data.profile.name }}">
+    {{- else -}}
+    <div class="hero-avatar-placeholder">{{ substr $.Site.Data.profile.name 0 1 }}</div>
+    {{- end }}
+    <div class="hero-info">
+      <h1 class="hero-name">{{ .Site.Data.profile.name }}</h1>
+      <p class="hero-title">{{ .Site.Data.profile.title }}</p>
+      <p class="hero-bio">{{ .Site.Data.profile.bio }}</p>
+      <div class="hero-meta">
+        {{- with .Site.Data.profile.age }}<span class="hero-meta-item">{{ . }} 岁</span>{{- end }}
+        {{- with .Site.Data.profile.gender }}<span class="hero-meta-item">{{ . }}</span>{{- end }}
+        {{- with .Site.Data.profile.location }}<span class="hero-meta-item">📍 {{ . }}</span>{{- end }}
+      </div>
+      <div class="hero-contacts">
+        {{- range .Site.Data.profile.contacts }}
+        <a class="contact-item" href="{{ .href }}" target="_blank" rel="noopener noreferrer">
+          <span>{{ .icon }}</span>
+          <span>{{ .label }}</span>
+        </a>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+items:
+  - company: 小米机器人技术有限公司
+    position: 高级算法工程师
+    period: 2022.04 — 至今
+    tags: [Loco-Manipulation, RL, UMI, VLA, NMPC+WBC]
+    highlights:
+      - text: 主导四足+机械臂长程移动操作（Loco-Manipulation）算法研发。
+        sub:
+          - 融合UMI、π₀算法，实现真实场景下机械臂复杂操作。
+          - 基于强化学习开发四足+机械臂全身运动控制算法。
+          - 基于NMPC开发全身运控算法，实现自动开门等长序列操作任务。
+      - text: 基于强化学习开发四足机器人盲走与视觉感知行走算法。
+      - text: 参与CyberDog2研发，开发空翻等高动态动作控制算法。
+      - text: 申请发明专利10余篇，荣获小米2022年度技术大奖优秀奖，2023年度小米青年工程师。
+
+  - company: 追觅科技
+    position: 运动控制算法工程师
+    period: 2020.11 — 2022.04
+    tags: [MPC+WBC, 四足]
+    highlights:
+      - text: 参与CyberDog四足机器人研发，优化MPC+WBC算法提升运动性能。
+
+  - company: 优必选（北研所）
+    position: 运动控制算法工程师
+    period: 2020.06 — 2020.11
+    tags: [QP, WBC, 四足]
+    highlights:
+      - text: 参与四足机器人运动控制算法开发，基于QP+WBC算法实现基础运动功能。

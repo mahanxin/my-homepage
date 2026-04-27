@@ -1,0 +1,63 @@
+items:
+  - name: 探索基于 RL 的四足+机械臂全身运动控制
+    period: 2025.10 — 2026.04
+    desc: 基于强化学习实现四足移动与机械臂操作的统一全身控制，追求动态环境下的精准鲁棒跟踪。
+    achievements:
+      - 设计全身协同控制策略，突破传统腿-臂解耦框架，实现移动中操作的自适应协调。
+      - 在动态干扰与复杂接触任务中显著提升操作成功率与地形适应能力，验证 sim-to-real 的有效性。
+    tags: [RL, WBC, Loco-Manipulation]
+    video: /videos/quadruped_arm_unif_stand_mani_2x.mp4
+
+  - name: 探索 UMI 与 VLA 在长序灵巧操作中的应用
+    period: 2025.12 — 2026.04
+    desc: 融合 UMI 高效数据采集范式和 π₀ VLA 模型，构建面向真实场景的复杂操作策略。
+    achievements:
+      - 基于 UMI 快速构建高质量演示数据集，结合 π₀ 模型实现多步骤操作任务的策略学习与泛化。
+      - 在真实环境中完成多物品整理、杯具摆放等长序任务，验证 VLA 在少样本条件下的零样本迁移能力。
+    tags: [UMI, VLA, Long-Horizon Manipulation]
+    video: /videos/arm_umi_pi0.5_cup_arrange.mp4
+
+  - name: 探索四足机器人视觉感知行走算法开发
+    period: 2025.01 — 2025.07
+    desc: 基于强化学习实现深度视觉引导的四足自主行走，攻克高度离散与间隙地形。
+    achievements:
+      - 设计基于深度图像的感知策略，使机器人具备台阶、高台、沟壑等非连续地形的自主跨越能力。
+      - 实现从仿真到实机的零样本迁移，显著提升复杂地形下的通行效率与鲁棒性。
+    tags: [RL, perceptive-locomotion]
+    video: /videos/quadruped_perceptive_loco_climb_gap.mp4
+
+  - name: 探索四足机器人盲走算法开发
+    period: 2024.06 — 2024.12
+    desc: 基于强化学习开发无视觉依赖的盲走算法，实现突变地形的鲁棒全地形行走。
+    achievements:
+      - 仅依赖本体感知，在不依赖外部视觉的条件下实现 15 cm 台阶、碎石路面等复杂地形的稳定通行。
+      - 显著提升无视觉反馈下的抗扰动能力与地形泛化性，为视觉方案提供安全冗余基础。
+    tags: [RL, blind-locomotion]
+    video: /videos/quadruped_blind_loco_15cm_stair_3x.mp4
+
+  - name: 主导四足机器人+机械臂自动开门算法开发
+    period: 2023.11 — 2024.04
+    desc: 基于 NMPC+WBC 统一框架，实现腿-臂全身协同与自主开门全流程。
+    achievements:
+      - 突破传统腿-臂分离控制范式，构建移动底盘与机械臂的统一运动控制与力分配框架。
+      - 自主完成门把检测定位、旋转与推门全流程，真正实现零人工干预的完整开门操作。
+    tags: [NMPC+WBC, Loco-Manipulation]
+    video: /videos/quadruped_arm_nmpc_door_opening.mp4
+
+  - name: 主导机械臂高精柔顺插拔操作算法开发
+    period: 2023.01 — 2023.08
+    desc: 融合末端力控与感知定位，实现接触密集型高精操作。
+    achievements:
+      - 基于末端六维力传感器开发柔顺力控与主动搜索策略，有效弥补纯视觉定位在接触任务中的精度不足。
+      - 实现机械臂自主插拔电源插头等紧公差任务，大幅提升操作成功率与执行效率。
+    tags: [柔顺力控, 机械臂]
+    video: /videos/arm_plug_inserting_web.mp4
+
+  - name: 参与 CyberDog2 四足机器人运动控制研发
+    period: 2022.04 — 2023.08
+    desc: 基于传统优化控制算法，全面提升四足机器人的运动性能与动作表现力。
+    achievements:
+      - 基于 MPC+WBC 的实时控制框架，优化机器人平稳性、抗扰性与全地形适应能力，保障基础运动性能的极致可靠。
+      - 基于 Offline-TO 轨迹优化，开发仿生高动态动作（花样空翻），大幅提升机器人运动敏捷性与动态表现力。
+    tags: [MPC+WBC, Offline-TO, 四足]
+    video: /videos/cyberdog2_flips.mp4

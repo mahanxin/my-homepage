@@ -1,0 +1,7 @@
+baseURL: "https://yourusername.github.io/"
+languageCode: "zh-CN"
+title: "个人主页"
+
+disableKinds:
+  - taxonomy
+  - term

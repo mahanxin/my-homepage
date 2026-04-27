@@ -1,0 +1,24 @@
+name: 马汉新
+title: 高级算法工程师
+bio: 超5年机器人研发经验，专注于基于最优控制和强化学习开发足式机器人全身运动控制算法。
+
+# 头像：留空则自动显示姓名首字母；填写路径则显示图片，如 /images/avatar.jpg
+avatar: /images/avatar.jpg
+
+age: 32
+gender: 男
+location: 北京市
+
+contacts:
+  - icon: "✉"
+    label: "mahanxin1993@163.com"
+    href: "mailto:mahanxin1993@163.com"
+  - icon: "📱"
+    label: "18811338202"
+    href: "tel:18811338202"
+  # - icon: "🐙"
+  #   label: "GitHub"
+  #   href: "https://github.com/yourusername"
+  # - icon: "💼"
+  #   label: "LinkedIn"
+  #   href: "https://linkedin.com/in/yourusername"

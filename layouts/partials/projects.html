@@ -1,0 +1,27 @@
+<section id="projects">
+  <div class="section-inner">
+    <h2 class="section-title">项目经历</h2>
+    <div class="projects-grid">
+      {{- range .Site.Data.projects.items }}
+      <div class="project-card">
+        {{- with .video }}
+        <video class="project-video" src="{{ . }}" autoplay muted playsinline preload="metadata" loop></video>
+        {{- end }}
+        <h3 class="project-name">{{ .name }}</h3>
+        <p class="project-period">{{ .period }}</p>
+        <p class="project-desc">{{ .desc }}</p>
+        {{- with .achievements }}
+        <ul class="project-achievements">
+          {{- range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{- end }}
+        {{- with .tags }}
+        <div class="tags">
+          {{- range . }}<span class="tag">{{ . }}</span>{{ end }}
+        </div>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+# Hugo build output
+public/
+resources/
+.hugo_build.lock
+
+# OS
+.DS_Store
+
+# Word resume (generated file)
+*.docx
+
+# Original / unused large video files
+static/videos/arm_plug_inserting.mp4
+static/videos/quadruped_arm_unif_stand_mani.mp4
+static/videos/quadruped_blind_loco_15cm_stair.mp4
+static/videos/quadruped_blind_loco_15.5cm_real_stairs.mp4
+static/videos/cyberdog2_dance.mp4
+static/videos/cyberdog2_frontflip_bow.mp4
+static/videos/quadruped_perceptive_loco_70cm_gap_vel0.8.mp4
+static/videos/quadruped_perceptve_loco_0.6m_climb.mp4
+
+# Original large photos
+"static/images/大头照-原图.jpg"
