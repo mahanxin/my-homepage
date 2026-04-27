@@ -5,7 +5,7 @@
       {{- range .Site.Data.projects.items }}
       <div class="project-card">
         {{- with .video }}
-        <video class="project-video" src="{{ . }}" autoplay muted playsinline preload="metadata" loop></video>
+        <video class="project-video" src="{{ . | relURL }}" autoplay muted playsinline preload="metadata" loop></video>
         {{- end }}
         <h3 class="project-name">{{ .name }}</h3>
         <p class="project-period">{{ .period }}</p>
