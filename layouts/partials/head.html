@@ -4,4 +4,17 @@
   <title>{{ .Site.Data.profile.name }} — 个人主页</title>
   <meta name="description" content="{{ .Site.Data.profile.bio }}">
   <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+      if (!isMobile) {
+        document.querySelectorAll('video.project-video').forEach(function (v) {
+          v.autoplay = true;
+          v.removeAttribute('controls');
+          v.load();
+          v.play().catch(function(){});
+        });
+      }
+    });
+  </script>
 </head>
