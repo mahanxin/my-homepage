@@ -3,13 +3,30 @@
 生成 PDF 简历
 用法：python3 scripts/gen_resume_pdf.py
 输出：马汉新_简历.pdf（项目根目录）
+
+依赖安装：
+  pip3 install weasyprint pyyaml
 """
 
 import sys
-import os
-import yaml
+
+# 检查依赖，缺失时给出明确提示
+missing = []
+try:
+    import yaml
+except ImportError:
+    missing.append("pyyaml")
+try:
+    from weasyprint import HTML
+except ImportError:
+    missing.append("weasyprint")
+
+if missing:
+    print(f"[错误] 缺少依赖包：{', '.join(missing)}")
+    print(f"请先执行：pip3 install {' '.join(missing)}")
+    sys.exit(1)
+
 from pathlib import Path
-from weasyprint import HTML, CSS
 
 # ── 路径 ──────────────────────────────────────────────────
 ROOT = Path(__file__).parent.parent
